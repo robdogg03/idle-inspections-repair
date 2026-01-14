@@ -1,15 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Phone } from 'lucide-react';
 import Logo from './Logo';
 import { BUSINESS_INFO } from '../constants';
+import { throttle } from '../utils/throttle';
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = throttle(() => {
       setIsScrolled(window.scrollY > 20);
-    };
+    }, 100);
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -27,12 +29,13 @@ const Navbar: React.FC = () => {
           <div className="hidden md:block w-48"></div>
 
           {/* Logo - Centered */}
-          <div 
-            className="flex-shrink-0 cursor-pointer transform md:absolute md:left-1/2 md:-translate-x-1/2 hover:scale-105 transition-transform" 
-            onClick={() => window.scrollTo(0,0)}
+          <button
+            className="flex-shrink-0 cursor-pointer transform md:absolute md:left-1/2 md:-translate-x-1/2 hover:scale-105 transition-transform focus:outline-none focus:ring-2 focus:ring-idle-teal focus:ring-offset-2 rounded-lg"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            aria-label="Return to top of page"
           >
             <Logo />
-          </div>
+          </button>
 
           {/* Contact Button - Right Side */}
           <div className="flex items-center justify-end flex-1 md:flex-none">

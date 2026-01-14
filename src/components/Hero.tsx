@@ -1,9 +1,9 @@
-import React from 'react';
+import { MouseEvent } from 'react';
 import { Phone, ArrowRight, MapPin } from 'lucide-react';
 import { BUSINESS_INFO } from '../constants';
 
-const Hero: React.FC = () => {
-  const scrollToServices = (e: React.MouseEvent<HTMLAnchorElement>) => {
+const Hero = () => {
+  const scrollToServices = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const servicesSection = document.getElementById('services');
     if (servicesSection) {

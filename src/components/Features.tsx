@@ -1,7 +1,6 @@
-import React from 'react';
 import { Phone, ShieldCheck, User } from 'lucide-react';
 
-const Features: React.FC = () => {
+const Features = () => {
   return (
     <section id="trust" className="py-24 bg-gray-50 relative overflow-hidden">
         {/* Decorative circle */}
@@ -13,9 +12,9 @@ const Features: React.FC = () => {
             {/* Image Composition */}
             <div className="relative order-2 lg:order-1">
                 <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
-                    <img 
-                        src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                        alt="Mechanic inspecting vehicle" 
+                    <img
+                        src="/images/mechanic-inspection.jpg"
+                        alt="Miguel Cruz performing vehicle inspection at Idle Inspections & Repair shop"
                         className="w-full h-auto object-cover"
                     />
                 </div>

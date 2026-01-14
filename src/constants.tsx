@@ -1,10 +1,10 @@
-import { Wrench, Search, Car, Battery, Disc, Settings, Phone, Clock, MapPin } from 'lucide-react';
-import { ServiceItem, Testimonial, NavLink } from './types';
+import { Wrench, Search, Car, Battery, Disc, Settings } from 'lucide-react';
+import { ServiceItem, Testimonial, BusinessInfo } from './types';
 
-export const BUSINESS_INFO = {
+export const BUSINESS_INFO: BusinessInfo = {
   name: "Idle Inspections & Repair",
   owner: "Miguel Cruz",
-  phone: "(325) 249-5131", 
+  phone: "(325) 249-5131",
   rawPhone: "3252495131",
   address: "10 Nelson Ave, San Angelo, TX 76905",
   location: "San Angelo, TX",
@@ -12,8 +12,6 @@ export const BUSINESS_INFO = {
   weekendHours: "Sat: By Appointment | Sun: Closed",
   tagline: "Honest Inspections. Reliable Repair.",
 };
-
-export const NAV_LINKS: NavLink[] = [];
 
 export const SERVICES: ServiceItem[] = [
   {

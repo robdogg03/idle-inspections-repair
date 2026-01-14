@@ -1,15 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Phone } from 'lucide-react';
 import { BUSINESS_INFO } from '../constants';
+import { throttle } from '../utils/throttle';
 
-const FloatingCallButton: React.FC = () => {
+const FloatingCallButton = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
+        const handleScroll = throttle(() => {
             // Show after scrolling past the hero (approx 500px)
             setIsVisible(window.scrollY > 500);
-        };
+        }, 100);
+
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);

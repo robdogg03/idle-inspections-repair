@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Logo: React.FC<{ className?: string }> = ({ className = "" }) => {
+const Logo = ({ className = "" }: { className?: string }) => {
   return (
     <div className={`flex flex-col select-none ${className}`}>
       {/* Top Graphic Part IDLE */}

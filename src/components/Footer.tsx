@@ -1,9 +1,8 @@
-import React from 'react';
 import { Phone, MapPin, Clock, User } from 'lucide-react';
 import Logo from './Logo';
 import { BUSINESS_INFO } from '../constants';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer id="contact" className="bg-idle-dark text-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

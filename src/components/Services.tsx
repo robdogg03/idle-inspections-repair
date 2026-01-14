@@ -1,8 +1,7 @@
-import React from 'react';
 import { SERVICES, BUSINESS_INFO } from '../constants';
 import { Phone } from 'lucide-react';
 
-const Services: React.FC = () => {
+const Services = () => {
   return (
     <section id="services" className="py-24 bg-white relative scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
