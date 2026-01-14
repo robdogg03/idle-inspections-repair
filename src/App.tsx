@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -18,6 +19,7 @@ function App() {
       </main>
       <Footer />
       <FloatingCallButton />
+      <Analytics />
     </div>
   );
 }
