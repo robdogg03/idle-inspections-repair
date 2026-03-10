@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#F8FAFC"/>
+  <g transform="skewX(-10)" font-family="Georgia, 'Times New Roman', serif" font-weight="900" font-style="italic">
+    <text x="6" y="34" font-size="34" fill="#5CC9BD">I</text>
+    <text x="28" y="34" font-size="34" fill="#333333">D</text>
+    <text x="6" y="62" font-size="34" fill="#F08A6C">L</text>
+    <text x="28" y="62" font-size="34" fill="#F4B07B">E</text>
+  </g>
+</svg>
